@@ -49,7 +49,7 @@ require __DIR__ . '/../vendor/autoload.php';
 // var_dump(RandomColor::one());
 
 // --------------------- CONSTANTES & ENUMERATIONS
-// use \Class\Reservation;
+// use \Class\Enum\Reservation;
 
 // $res = new Reservation();
 // var_dump($res->status == \Class\ReservationStatus::APPROVAL_PENDING); // true
@@ -77,3 +77,13 @@ require __DIR__ . '/../vendor/autoload.php';
 
 // $peugot = new Mercedes("Mercedes");
 // var_dump($peugot->getMarque());
+
+// -------------------- INTERFACE
+
+use Class\Interface\BasicPDF;
+
+$basiquePDF = new BasicPDF();
+$basiquePDF->downloadPDF();
+
+// -------------------- Le LATE STATIC BINDING
+// VIDÉO FORMATION LIMITE: 2H28 (ou moins)

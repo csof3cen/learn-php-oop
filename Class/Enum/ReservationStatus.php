@@ -1,6 +1,6 @@
 <?php
 
-namespace Class;
+namespace Class\Enum;
 
 enum ReservationStatus
 {
